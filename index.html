@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>DEVICE</title>
-        <link rel="stylesheet" href="www/css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.css">
     </head>
 
     <body>
@@ -22,6 +22,14 @@
             <div>
                 <nav>
                 <a href="#">каталог товаров</a>
+                <ul class="visually-hidden">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Экшн-камеры</a></li>
+                    <li><a href="#">Фитнес-браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
                     <ul>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">гарантия</a></li>
@@ -33,15 +41,8 @@
 
         <main>
             <div>
-                <div>
-                    <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка с подставкой(и без) во всех состояниях">
-                </div>
-                <div>
-                    <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-                </div>
-                <div>
-                    <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-                </div>
+                <h2>01</h2>
+                <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка с подставкой(и без) во всех состояниях">
                 <div>
                     <h2>Делай селфи, как Бен Стиллер!</h2>
                     <p>Самая длинная палка в магазине доступна у нас в магазине.
@@ -58,6 +59,42 @@
                             <td>Длина палки</td>
                             <td>Вес палки</td>
                             <td>Материал</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="visually-hidden">
+                <h2>02</h2>
+                <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+                <div>
+                    <h2>Худеем правильно!</h2>
+                    <p>Мотивирующие фитнес браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
+                    <a href="#">Подробнее</a>
+                    <table>
+                        <tr>
+                            <td>48 часов</td>
+                        </tr>
+                        <tr>
+                            <td>Без подзарядки</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="visually-hidden">
+                <h2>03</h2>
+                <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+                <div>
+                    <h2>Порхает как бабочка, жалит как пчела!</h2>
+                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированым под стандартную камеру</p>
+                    <a href="#">Подробнее</a>
+                    <table>
+                        <tr>
+                            <td>800 м</td>
+                            <td>50 м</td>
+                        </tr>
+                        <tr>
+                            <td>Дальность полёта</td>
+                            <td>Радиус поражения</td>
                         </tr>
                     </table>
                 </div>
@@ -114,10 +151,10 @@
                 </div>
             </div>
             <div>
-                <img src="img/company1.jpg" width="260" height="100" alt="Компания dji">
-                <img src="img/company2.jpg" width="260" height="100" alt="Компания SP Gadgets">
-                <img src="img/company3.jpg" width="260" height="100" alt="Компания GoPro Hero">
-                <img src="img/company4.jpg" width="260" height="100" alt="Компания Vive">
+                <a href="#"><img src="img/company1.png" width="260" height="100" alt="Компания dji"></a>
+                <a href="#"><img src="img/company2.png" width="260" height="100" alt="Компания SP Gadgets"></a>
+                <a href="#"><img src="img/company3.png" width="260" height="100" alt="Компания GoPro Hero"></a>
+                <a href="#"><img src="img/company4.png" width="260" height="100" alt="Компания Vive"></a>
             </div>
             <div>
                 <div>
@@ -134,7 +171,7 @@
                 <div>
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
+                    <img src="img/map.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
                     <a href="#">напишите нам</a>
                 </div>
             </div>
@@ -167,6 +204,21 @@
                 <a href="#">htmlacademy</a>
             </div>
         </footer>
+
+        <section class="visually-hidden">
+            <form>
+                <label>Ваше имя:</label>
+                <input placeholder="Имя Фамилия" type="text">
+                <label>Ваш e-mail:</label>
+                <input placeholder="email@example.com" type="text">
+                <label>Текст письма:</label>
+                <input placeholder="В свободной форме" type="text">
+                <input type="submit" name="submit" value="Отправить">
+            </form>
+        </section>
+        <section class="visually-hidden">
+            <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 15(попап)">
+        </section>
     </body>
 </html>
 
