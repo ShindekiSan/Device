@@ -50,47 +50,44 @@
                         <li>Стоимость</li>
                         <li>
                             Цвет
-                            <form>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" name="color1" value="1">Черный
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" name="color2" value="2">Белый
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" name="color3" value="3">Синий
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" name="color4" value="4">Красный
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" name="color5" value="5">Зелёный
-                                    </label>
-                                </p>
+                            <form class="color-filter" method="GET">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="color1" id="check1" value="1">
+                                        <label for="check1">Чёрный</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color2" id="check2" value="2">
+                                        <label for="check2">Белый</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color3" id="check3" value="3">
+                                        <label for="check3">Синий</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color4" id="check4" value="4">
+                                        <label for="check4">Красный</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color5" id="check5" value="5">
+                                        <label for="check5">Зелёный</label>
+                                    </li>
+                                </ul>
                             </form>
                         </li>
                         <li>
                             Bluetooth
-                            <form>
-                                <p>
-                                    <label>
-                                        <input type="radio" name="choice-yes" value="yes">есть
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="radio" name="choice-no" value="no">нет 
-                                    </label>
-                                </p>
+                            <form class="bluetooth-filter" method="GET">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="choice-yes" id="choice-yes" value="yes">
+                                        <label for="choice-yes">есть</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="choice-no" id="choice-no" value="no">
+                                        <label for="choice-no">нет</label>
+                                    </li>
+                                </ul>
                             </form>
                         </li>
                     </ul>
@@ -106,7 +103,7 @@
                     <div>
                         <div>
                             <img src="img/item-1.png" width="360" height="380" alt="Селфи-палка 1">
-                            <div class="model">
+                            <div class="visually-hidden">
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -117,7 +114,7 @@
                         </div>
                         <div>
                             <img src="img/item-2.png" width="360" height="380" alt="Селфи-палка 2">
-                            <div class="model">
+                            <div class="visually-hidden">
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -130,7 +127,7 @@
                     <div>
                         <div>
                             <img src="img/item-3.png" width="360" height="380" alt="Селфи-палка 3">
-                            <div class="model">
+                            <div class="visually-hidden">
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -141,7 +138,7 @@
                         </div>
                         <div>
                             <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка 4">
-                            <div class="model">
+                            <div class="visually-hidden">
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
