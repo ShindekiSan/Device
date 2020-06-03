@@ -12,11 +12,17 @@
             <div>
                 <a href="#"><img src="img/logo.png" width="163" height="35" alt="Логотип"></a>
                 <div>
-                    <input placeholder="Поиск по сайту" type="text">
-                    <a href="#" class="visually-hidden">Найти</a>
+                    <form class="search" method="POST" action="#">
+                        <label for="search">
+                            <input placeholder="Поиск по сайту" type="search" id="search">
+                        </label>
+                        <button class="visually-hidden">Найти</button>
+                    </form>
                 </div>
                 <div>
                     <a href="#">Войти</a>
+                    <a href="#" class="visually-hidden">Валентин Петухов</a>
+                    <a href="#" class="visually-hidden">Выйти</a>
                     <ul>
                         <li><a href="#">Сравнить</a></li>
                         <li><a href="#">Корзина</a></li>
@@ -25,14 +31,14 @@
             </div>
             <div>
                 <nav>
-                <a href="#">каталог товаров</a>
-                <ul class="visually-hidden">
-                    <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="#">Моноподы для селфи</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
-                    <li><a href="#">Фитнес-браслеты</a></li>
-                    <li><a href="#">Умные часы</a></li>
-                    <li><a href="#">Квадрокоптеры</a></li>
+                    <a href="#">каталог товаров</a>
+                    <ul class="visually-hidden">
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="#">Моноподы для селфи</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                        <li><a href="#">Фитнес-браслеты</a></li>
+                        <li><a href="#">Умные часы</a></li>
+                        <li><a href="#">Квадрокоптеры</a></li>
                 </ul>
                     <ul>
                         <li><a href="#">Доставка</a></li>
@@ -44,14 +50,13 @@
         </header>
 
         <main>
+            <h1 class="visually-hidden">Магазин гаджетов</h1>
             <div>
-                <h2>01</h2>
+                <p>01</p>
                 <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка с подставкой(и без) во всех состояниях">
                 <div>
                     <h2>Делай селфи, как Бен Стиллер!</h2>
-                    <p>Самая длинная палка в магазине доступна у нас в магазине.
-                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                    </p>
+                    <p>Самая длинная палка в магазине доступна у нас в магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                     <a href="#">подробнее</a>
                     <table>
                         <tr>
@@ -68,7 +73,7 @@
                 </div>
             </div>
             <div class="visually-hidden">
-                <h2>02</h2>
+                <p>02</p>
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
                 <div>
                     <h2>Худеем правильно!</h2>
@@ -85,7 +90,7 @@
                 </div>
             </div>
             <div class="visually-hidden">
-                <h2>03</h2>
+                <p>03</p>
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                 <div>
                     <h2>Порхает как бабочка, жалит как пчела!</h2>
@@ -147,8 +152,23 @@
                     <button>кредит</button>
                 <div>
                     <h2>Доставка</h2>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду соверншенно бесплатно!
+                    <p>
+                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду соверншенно бесплатно!
                         Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.
+                    </p>
+                </div>
+                <div class="visually-hidden">
+                    <h2>Гарантия</h2>
+                    <p>
+                        Если из-за возгорания купленного товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
+                        Товар, не дом, конечно же.
+                    </p>
+                </div>
+                <div class="visually-hidden">
+                    <h2>Кредит</h2>
+                    <p>
+                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+                        Выгодные для нашего банка, разумеется.
                     </p>
                 </div>
             </div>
@@ -208,26 +228,28 @@
         </footer>
 
         <section class="visually-hidden">
-            <h2 class="visually-hidden">Форма для письма</h2>
-            <form class="user-mail" method="POST">
-                <p>
+            <h2 class="visually-hidden">Форма письма</h2>
+            <form class="user-mail" method="POST" action="#">
+                <div>
                     <label for="user-name">Ваше имя:</label>
                     <input placeholder="Имя Фамилия" type="text" name="name" id="user-name">
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="user-email">Ваш e-mail:</label>
-                    <input placeholder="email@example.com" type="text" name="email" id="user-email">
-                </p>
-                <p>
+                    <input placeholder="email@example.com" type="email" name="email" id="user-email">
+                </div>
+                <div>
                     <label for="user-text">Текст письма:</label>
-                    <input placeholder="В свободной форме" type="text" name="text" id="user-text">
-                </p>
+                    <textarea placeholder="В свободной форме" type="text" name="text" id="user-text"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+                <button>Закрыть</button>
             </form>
-            <button type="submit">Отправить</button>
         </section>
         <section class="visually-hidden">
-            <h2 class="visually-hidden">Адрес</h2>
+            <h2 class="visually-hidden">Адрес офиса</h2>
             <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 15(попап)">
+            <button>Закрыть</button>
         </section>
     </body>
 </html>
