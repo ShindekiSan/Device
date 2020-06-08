@@ -12,17 +12,19 @@
             <div>
                 <a href="#"><img src="img/logo.png" width="163" height="35" alt="Логотип"></a>
                 <div>
-                    <form class="search" method="POST" action="#">
+                    <form class="search" method="GET" action="#">
                         <label for="search">
                             <input placeholder="Поиск по сайту" type="search" id="search">
                         </label>
-                        <button class="visually-hidden">Найти</button>
+                        <button type="submit">Найти</button>
                     </form>
                 </div>
                 <div>
-                    <a href="#" class="visually-hidden">Войти</a>
-                    <a href="#">Валентин Петухов</a>
-                    <a href="#">Выйти</a>
+                    <a href="#">Войти</a>
+                    <div>
+                        <a href="#">Валентин Петухов</a>
+                        <a href="#">Выйти</a>
+                    </div>
                     <ul>
                         <li><a href="#">Сравнить</a></li>
                         <li><a href="#">Корзина</a></li>
@@ -53,62 +55,60 @@
                 <div>
                     <h3>Фильтр:</h3>
                     <div>
-                            <form class="filters" method="POST" action="#">
-                                <fieldset>
-                                    <legend>Стоимость:</legend>
-                                    <div>
-                                        <label for="min-price">
-                                            <input type="button" name="min-price" id="min-price">
-                                            <img src="img/filter-button.svg" width="20" height="22" alt="Минимальная стоимость">
-                                            <p>От 0</p>
-                                        </label>
-                                        <label for="max-price">
-                                            <input type="button" name="max-price" id="max-price">
-                                            <img src="img/filter-button.svg" width="20" height="22" alt="Максимальная стоимость">
-                                            <p>До 5000</p>
-                                        </label>
-                                    </div>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Цвет</legend>
-                                    <ul>
-                                        <li>
-                                            <input type="checkbox" name="color-black" id="check1" value="black">
-                                            <label for="check1">Чёрный</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="color-white" id="check2" value="white">
-                                            <label for="check2">Белый</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="color-blue" id="check3" value="blue">
-                                            <label for="check3">Синий</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="color-red" id="check4" value="red">
-                                            <label for="check4">Красный</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="color-green" id="check5" value="green">
-                                            <label for="check5">Зелёный</label>
-                                        </li>
-                                    </ul>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Bluetooth</legend>
-                                    <ul>
-                                        <li>
-                                            <input type="radio" name="choice" id="choice-yes" value="bluetooth-yes">
-                                            <label for="choice-yes">есть</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="choice" id="choice-no" value="bluetooth-no">
-                                            <label for="choice-no">нет</label>
-                                        </li>
+                        <form class="filters" method="POST" action="#">
+                            <fieldset>
+                                <legend>Стоимость:</legend>
+                                <div>
+                                    <label for="min-price">
+                                        <input type="button" name="min-price" id="min-price" value="price">
+                                        От 0
+                                    </label>
+                                    <label for="max-price">
+                                        <input type="button" name="max-price" id="max-price" value="price">
+                                        До 5000
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Цвет</legend>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="color-black" id="check1" value="black">
+                                        <label for="check1">Чёрный</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color-white" id="check2" value="white">
+                                        <label for="check2">Белый</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color-blue" id="check3" value="blue">
+                                        <label for="check3">Синий</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color-red" id="check4" value="red">
+                                        <label for="check4">Красный</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="color-green" id="check5" value="green">
+                                        <label for="check5">Зелёный</label>
+                                    </li>
                                 </ul>
-                                </fieldset>
-                                <button>показать</button>
-                            </form>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Bluetooth</legend>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="choice-bluetooth" id="choice-yes" value="yes">
+                                        <label for="choice-yes">есть</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="choice-tooth" id="choice-no" value="no">
+                                        <label for="choice-no">нет</label>
+                                    </li>
+                            </ul>
+                            </fieldset>
+                            <button type="submit">Показать</button>
+                        </form>
                     </div>
                 </div>
                 <div>
@@ -119,13 +119,13 @@
                         <li><a href="#">По популярности</a></li>
                     </ul>
                     <div>
-                        <button><img src="img/icon-down-dir.svg" width="11" height="10" alt="Следующая страница"></button>
-                        <button><img src="img/icon-up-dir.svg" width="11" height="10" alt="Предыдущая страница"></button>
+                        <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Следующая страница"></a>
+                        <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Предыдущая страница"></a>
                     </div>
                     <div>
                         <div>
                             <img src="img/item-1.png" width="360" height="380" alt="Селфи-палка 1">
-                            <div class="visually-hidden">
+                            <div>
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -136,7 +136,7 @@
                         </div>
                         <div>
                             <img src="img/item-2.png" width="360" height="380" alt="Селфи-палка 2">
-                            <div class="visually-hidden">
+                            <div>
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -149,7 +149,7 @@
                     <div>
                         <div>
                             <img src="img/item-3.png" width="360" height="380" alt="Селфи-палка 3">
-                            <div class="visually-hidden">
+                            <div>
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div>
                             <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка 4">
-                            <div class="visually-hidden">
+                            <div>
                                 <button>в корзину</button>
                                 <button>Добавить к сравнению</button>
                             </div>
@@ -173,9 +173,9 @@
                     <nav>
                         <button>Назад</button>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
                         </ul>
                         <button>Вперед</button>
                     </nav>
