@@ -12,11 +12,11 @@
             <div>
                 <a href="#"><img src="img/logo.png" width="163" height="35" alt="Логотип"></a>
                 <div>
-                    <form class="search" method="POST" action="#">
+                    <form class="search" method="GET" action="#">
                         <label for="search">
                             <input placeholder="Поиск по сайту" type="search" id="search">
                         </label>
-                        <button>Найти</button>
+                        <button type="submit">Найти</button>
                     </form>
                 </div>
                 <div>
@@ -41,7 +41,7 @@
                         <li><a href="#">Фитнес-браслеты</a></li>
                         <li><a href="#">Умные часы</a></li>
                         <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
+                    </ul>
                     <ul>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">гарантия</a></li>
@@ -54,7 +54,6 @@
         <main>
             <h1 class="visually-hidden">Магазин гаджетов</h1>
             <div>
-                <span>01</span>
                 <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка с подставкой(и без) во всех состояниях">
                 <div>
                     <h2>Делай селфи, как Бен Стиллер!</h2>
@@ -75,7 +74,6 @@
                 </div>
             </div>
             <div>
-                <span>02</span>
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
                 <div>
                     <h2>Худеем правильно!</h2>
@@ -92,7 +90,6 @@
                 </div>
             </div>
             <div>
-                <span>03</span>
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                 <div>
                     <h2>Порхает как бабочка, жалит как пчела!</h2>
@@ -155,8 +152,7 @@
                 <div>
                     <h2>Доставка</h2>
                     <p>
-                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду соверншенно бесплатно!
-                        Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.
+                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду соверншенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.
                     </p>
                 </div>
                 <div>
@@ -194,7 +190,7 @@
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <img src="img/map.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
-                    <a href="#">напишите нам</a>
+                    <a href="#">Напишите нам</a>
                 </div>
             </div>
         </main>
@@ -217,8 +213,12 @@
                 </ul>
             </div>
             <div>
+                <a href="#">Войти</a>
+                <div>
+                    <a href="#">Валентин Петухов</a>
+                    <a href="#">Выйти</a>
+                </div>
                 <ul>
-                    <li><a href="#">Войти</a></li>
                     <li><a href="#">Сравнить</a></li>
                     <li><a href="#">Корзина</a></li>
                 </ul>
@@ -229,9 +229,9 @@
 
         <section>
             <h2 class="visually-hidden">Форма письма</h2>
+            <button>Закрыть</button>
             <form class="user-mail" method="POST" action="#">
                 <div>
-                    <button>Закрыть</button>
                     <label for="user-name">Ваше имя:</label>
                     <input placeholder="Имя Фамилия" type="text" name="name" id="user-name">
                 </div>
