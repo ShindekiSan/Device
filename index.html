@@ -8,18 +8,18 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <div>
                 <a href="#"><img src="img/logo.png" width="163" height="35" alt="Логотип"></a>
                 <div>
                     <form class="search" method="GET" action="#">
-                        <label for="search">
+                        <label for="search" class="search-form">
                             <input placeholder="Поиск по сайту" type="search" id="search">
                         </label>
-                        <button type="submit">Найти</button>
+                        <button type="submit" class="search-form-button">Найти</button>
                     </form>
                 </div>
-                <div>
+                <div class="site-sections">
                     <a href="#">Войти</a>
                     <div>
                         <a href="#">Валентин Петухов</a>
@@ -32,9 +32,9 @@
                 </div>
             </div>
             <div>
-                <nav>
-                    <a href="#">каталог товаров</a>
-                    <ul>
+                <nav class="site-navigation">
+                    <a href="#" class="site-navigation-catalog">каталог товаров</a>
+                    <ul class="site-navigation-products">
                         <li><a href="#">Виртуальная реальность</a></li>
                         <li><a href="#">Моноподы для селфи</a></li>
                         <li><a href="#">Экшн-камеры</a></li>
@@ -42,30 +42,32 @@
                         <li><a href="#">Умные часы</a></li>
                         <li><a href="#">Квадрокоптеры</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Доставка</a></li>
+                    <section class="site-navigation-conditions">
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
                         <li><a href="#">гарантия</a></li>
-                    </ul>
-                    <a href="#">Контакты</a>
+                        </ul>
+                        <a href="#">Контакты</a>
+                    </section>
                 </nav>
             </div>
         </header>
 
         <main>
             <h1 class="visually-hidden">Магазин гаджетов</h1>
-            <div>
+            <div class="site-product-overwiew">
                 <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка с подставкой(и без) во всех состояниях">
                 <div>
                     <h2>Делай селфи, как Бен Стиллер!</h2>
                     <p>Самая длинная палка в магазине доступна у нас в магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                     <a href="#">подробнее</a>
                     <table>
-                        <tr>
+                        <tr class="product-characteristics">
                             <td>8,5м</td>
                             <td>5 кг</td>
                             <td>Карбон</td>
                         </tr>
-                        <tr>
+                        <tr class="product-characteristics-name">
                             <td>Длина палки</td>
                             <td>Вес палки</td>
                             <td>Материал</td>
@@ -75,77 +77,89 @@
             </div>
             <div>
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-                <div>
+                <div class="site-product-overwiew">
                     <h2>Худеем правильно!</h2>
                     <p>Мотивирующие фитнес браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
                     <a href="#">Подробнее</a>
                     <table>
-                        <tr>
+                        <tr class="product-characteristics">
                             <td>48 часов</td>
                         </tr>
-                        <tr>
+                        <tr class="product-characteristics-name">
                             <td>Без подзарядки</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div>
+            <div class="site-product-overwiew">
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                 <div>
                     <h2>Порхает как бабочка, жалит как пчела!</h2>
                     <p>Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированым под стандартную камеру</p>
                     <a href="#">Подробнее</a>
                     <table>
-                        <tr>
+                        <tr class="product-characteristics">
                             <td>800 м</td>
                             <td>50 м</td>
                         </tr>
-                        <tr>
+                        <tr class="product-characteristics-name">
                             <td>Дальность полёта</td>
                             <td>Радиус поражения</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div>
+            <div class="site-products-navigation">
                 <div>
                     <a href="#">
-                        <img src="img/popular-1.svg" width="97" height="55" alt="Очки VR">
+                        <div>
+                            <img src="img/popular-1.svg" width="97" height="55" alt="Очки VR">
+                        </div>
                         <p>Виртуальная реальность</p>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="img/popular-2.svg" width="86" height="117" alt="Монопод">
+                        <div>
+                            <img src="img/popular-2.svg" width="86" height="117" alt="Монопод">
+                        </div>
                         <p>Моноподы для селфи</p>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-Камера">
+                        <div>
+                            <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-Камера">
+                        </div>
                         <p>Экшн-камеры</p>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-Браслет">
+                        <div>
+                            <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-Браслет">
+                        </div>
                         <p>Фитнес-браслеты</p>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                        <div>
+                            <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                        </div>
                         <p>Умные часы</p>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптер">
+                        <div>
+                            <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптер">
+                        </div>
                         <p>Квадрокоптеры</p>
                     </a>
                 </div>
             </div>
-            <div>
+            <div class="site-conditions-section">
                 <button>доставка</button>
                 <button>гарантия</button>
                 <button>кредит</button>
@@ -174,7 +188,7 @@
                 <a href="#"><img src="img/company3.png" width="260" height="100" alt="Компания GoPro Hero"></a>
                 <a href="#"><img src="img/company4.png" width="260" height="100" alt="Компания Vive"></a>
             </div>
-            <div>
+            <div class="about-us">
                 <div>
                     <h2>О нас</h2>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который живет в каждом из нас!</p>
@@ -195,13 +209,13 @@
             </div>
         </main>
 
-        <footer>
+        <footer class="footer">
             <div>
                 <a href="#"><img src="img/logo2.png" width="163" height="35" alt="Логотип"></a>
                 <p>г. Москва, ул. Строителей, 15</p>
             </div>
             <div>
-                <ul>
+                <ul class="footer-navigation-conditions">
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантия</a></li>
                     <li><a href="#">Контакты</a></li>
@@ -212,7 +226,7 @@
                     <li><a href="#">Инстаграм</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-site-sections">
                 <a href="#">Войти</a>
                 <div>
                     <a href="#">Валентин Петухов</a>
@@ -222,12 +236,12 @@
                     <li><a href="#">Сравнить</a></li>
                     <li><a href="#">Корзина</a></li>
                 </ul>
-                <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
                 <a href="#">htmlacademy</a>
             </div>
         </footer>
 
-        <section>
+        <section class="write-us-form">
             <h2 class="visually-hidden">Форма письма</h2>
             <button>Закрыть</button>
             <form class="user-mail" method="POST" action="#">
@@ -243,7 +257,7 @@
                     <label for="user-text">Текст письма:</label>
                     <textarea placeholder="В свободной форме" name="text" id="user-text" rows="6" cols="60"></textarea>
                 </div>
-                <button type="submit">Отправить</button>
+                <button type="submit" class="submit-button">Отправить</button>
             </form>
         </section>
         <section>
