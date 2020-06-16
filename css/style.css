@@ -356,7 +356,11 @@ footer p a{
     line-height: 40px;
 }
 
-.catalog-page button {
+.catalog {
+    background-color: rgb(238, 238, 238);
+}
+
+.catalog-filters-form-button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 10px;
@@ -372,29 +376,58 @@ footer p a{
     width: 200px;
 }
 
-.catalog-page-filters-form {
-    background-color: rgb(238, 238, 238);
-}
-
-.catalog-page-products a{
+.catalog-products a{
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: black;
 }
 
-.catalog-page-sort-settings {
+.catalog-sort-settings {
     background-color: rgba(235, 235, 235);
 }
 
-.catalog-page-products span {
+.catalog-products span {
     font-family: Gliroy-Light, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: rgb(124, 124, 124);
 }
 
- .catalog-page--page-switches button{
+
+.catalog-add-to-cart-button {
+    font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 10px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    background-color: rgb(240, 197, 46);
+    border: none;
+
+    height: 8px;
+    width: 200px;
+}
+
+ .catalog-add-to-comparsion-button {
+    font-family: OpenSans-Light, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    color: rgb(134, 134, 134);
+
+    border: none;
+ }
+
+ .catalog-page-switches a {
+    font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(164, 164, 164);
+ }
+
+ .catalog-page-switches button{
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -403,18 +436,4 @@ footer p a{
 
     border: none;
     background-color: rgba(255, 255, 255, 0);
- }
-
- .catalog-page-add-to-comparsion-button {
-    font-family: OpenSans-Light, Arial, sans-serif;
-    font-size: 13px;
-    line-height: 36px;
-    color: rgb(134, 134, 134);
- }
-
- .catalog-page--page-switches a {
-    font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgb(164, 164, 164);
  }
