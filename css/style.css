@@ -1,25 +1,25 @@
 @font-face {
     font-family: "OpenSans-Light" ;
     src:
-        url("../fonts/OpenSans-Light.ttf");
+        url("../fonts/opensanslight.woff");
 }
 
 @font-face {
     font-family: "OpenSans-Regular" ;
     src:
-        url("../fonts/OpenSans-Regular.ttf")
+        url("../fonts/opensans.woff")
 }
 
 @font-face {
     font-family: "Gliroy-ExtraBold";
     src:
-        url("../fonts/Gilroyextrabold.ttf")
+        url("../fonts/gilroyextrabold.woff")
 }
 
 @font-face {
     font-family: "Gliroy-Light";
     src:
-        url("../fonts/Gilroylight.ttf")
+        url("../fonts/gilroylight.woff")
 }
 
 .model {
@@ -30,7 +30,7 @@
     background-color: rgb(247, 226, 150);
 }
 
-.search-form input{
+.search-form input {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -63,10 +63,6 @@
     list-style: none;
 }
 
-.site-navigation ul {
-    list-style: none;
-}
-
 .site-navigation-catalog {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
@@ -77,7 +73,11 @@
     letter-spacing: 5px;
 }
 
-.site-navigation-products a{
+.site-navigation-products {
+    list-style: none;
+}
+
+.site-navigation-products a {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -85,7 +85,12 @@
     color: black;
 }
 
-.site-navigation-conditions a{
+
+.site-navigation-conditions ul {
+    list-style: none;
+}
+
+.site-navigation-conditions a {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -101,7 +106,7 @@
     line-height: 56px;
 }
 
-.site-product-overwiew p{
+.site-product-overwiew p {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -131,7 +136,7 @@
     line-height: 20px;
 }
 
-.site-products-navigation a {
+.site-product-link {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -139,14 +144,14 @@
     text-decoration: none;
 }
 
-.site-products-navigation a div {
+.site-product-link div {
     background-color: rgb(247, 226, 150);
 
     width: 160px;
     height: 160px;
 }
 
-.site-products-navigation p {
+.site-product-link p {
     width: 160px;
 }
 
@@ -154,7 +159,7 @@
     background-color: rgb(229, 229, 229);
 }
 
-.site-conditions-section button{
+.site-conditions-section button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 9px;
@@ -182,7 +187,7 @@
     line-height: 30px;
 }
 
-.about-us h2{
+.about-us h2 {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 47px;
     line-height: 48px;
@@ -220,18 +225,22 @@
     width: 100%;
 }
 
-.footer ul {
+.footer-navigation-conditions {
     list-style: none;
 }
 
-footer p{
+.footer-socials {
+    list-style: none;
+}
+
+.footer-address {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: white;
 }
 
-footer p a{
+.footer-tel {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -268,7 +277,7 @@ footer p a{
     color: black;
 }
 
-.write-us-form input{
+.write-us-form input {
     font-family: OpenSans-Regular, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -314,13 +323,13 @@ footer p a{
     width: 200px;
 }
 
-.catalog-page h2{
+.catalog-name {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 47px;
     line-height: 48px;
 }
 
-.catalog-page a {
+.site-sections-path a {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 13px;
     line-height: 23px;
@@ -332,7 +341,7 @@ footer p a{
     list-style: none;
 }
 
-.catalog-page h3 {
+.catalog-settings-section-name {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -340,17 +349,17 @@ footer p a{
     letter-spacing: 3px;
 }
 
-.catalog-page fieldset {
+.filters fieldset {
     border: none;
 }
 
-.catalog-page legend {
+.filters legend {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
 }
 
-.catalog-page label {
+.filters label {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
@@ -376,7 +385,7 @@ footer p a{
     width: 200px;
 }
 
-.catalog-products a{
+.catalog-products a {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -385,6 +394,14 @@ footer p a{
 
 .catalog-sort-settings {
     background-color: rgba(235, 235, 235);
+}
+
+.catalog-sort-settings a {
+    font-family: OpenSans-Light, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    color: rgb(199, 199, 199);
+    text-decoration: none;
 }
 
 .catalog-products span {
@@ -427,7 +444,7 @@ footer p a{
     color: rgb(164, 164, 164);
  }
 
- .catalog-page-switches button{
+ .catalog-page-switches button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
