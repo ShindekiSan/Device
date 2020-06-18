@@ -365,6 +365,10 @@
     line-height: 40px;
 }
 
+.fliters ul {
+    list-style: none;
+}
+
 .catalog {
     background-color: rgb(238, 238, 238);
 }
