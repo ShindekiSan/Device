@@ -329,16 +329,16 @@
     line-height: 48px;
 }
 
+.site-sections-path {
+    list-style: none;
+}
+
 .site-sections-path a {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 13px;
     line-height: 23px;
     color: rgb(199, 199, 199);
     text-decoration: none;
-}
-
-.catalog-page ul {
-    list-style: none;
 }
 
 .catalog-settings-section-name {
@@ -349,14 +349,14 @@
     letter-spacing: 3px;
 }
 
-.filters fieldset {
-    border: none;
-}
-
 .filters legend {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
+}
+
+.filters fieldset {
+    border: none;
 }
 
 .filters label {
@@ -365,7 +365,7 @@
     line-height: 40px;
 }
 
-.fliters ul {
+.filters ul {
     list-style: none;
 }
 
@@ -406,6 +406,10 @@
     line-height: 23px;
     color: rgb(199, 199, 199);
     text-decoration: none;
+}
+
+.catalog-sort-settings ul {
+    list-style: none;
 }
 
 .catalog-products span {
