@@ -298,6 +298,7 @@
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 15px;
     line-height: 30px;
+    
     padding-top: 90px;
 }
 
@@ -364,6 +365,7 @@
 
 .footer-navigation-conditions li {
     padding-left: 35px;
+
     letter-spacing: 3px;
 }
 
@@ -371,6 +373,7 @@
     list-style: none;
 
     display: flex;
+
     width: 160px;
 }
 
@@ -416,6 +419,7 @@
     flex-direction: column;
 
     width: 760px;
+
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -500,7 +504,7 @@
 
     display: flex;
 
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 .site-sections-path a {
@@ -584,6 +588,7 @@
 
 .catalog-sort-settings {
     background-color: rgba(235, 235, 235);
+
     width: 800px;
     height: 70px;
 
@@ -663,6 +668,6 @@
     margin: 0 auto;
 }
 
- .model {
+ .hidden-display {
     display: none;
 }
