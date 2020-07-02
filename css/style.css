@@ -497,6 +497,10 @@
 
 .site-sections-path {
     list-style: none;
+
+    display: flex;
+
+    padding-left: 0;
 }
 
 .site-sections-path a {
@@ -505,6 +509,8 @@
     line-height: 23px;
     color: rgb(199, 199, 199);
     text-decoration: none;
+
+    padding-right: 20px;
 }
 
 .catalog-settings-section-name {
@@ -513,6 +519,8 @@
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 3px;
+
+    margin-bottom: 90px;
 }
 
 .filters legend {
@@ -577,6 +585,7 @@
 .catalog-sort-settings {
     background-color: rgba(235, 235, 235);
     width: 760px;
+    height: 70px;
 
     display: flex;
     justify-content: space-between;
