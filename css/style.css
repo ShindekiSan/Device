@@ -22,12 +22,16 @@
         url("../fonts/gilroylight.woff")
 }
 
-.model {
-    display: none;
-}
 
 .header {
     background-color: rgb(247, 226, 150);
+}
+
+.header-1st-section {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 60px;
 }
 
 .search-form input {
@@ -51,19 +55,50 @@
     border: 2px solid black;
 }
 
+.site-sections {
+    display: flex;
+
+    padding-right: 60px;
+}
+
 .site-sections a {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: black;
     text-decoration: none;
+
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.log-in-button {
+    padding-right: 235px;
 }
 
 .site-sections ul {
     list-style: none;
+
+    display: flex;
+}
+
+.site-sections li {
+    padding-left: 40px;
+}
+
+.header-navigation-section {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 60px;
+    padding-top: 53px;
 }
 
 .site-navigation-catalog {
+    padding-top: 16px;
+}
+
+.site-navigation-catalog-button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -75,6 +110,11 @@
 
 .site-navigation-products {
     list-style: none;
+
+    padding-left: 0px;
+
+    flex-direction: column;
+    display: flex;
 }
 
 .site-navigation-products a {
@@ -85,9 +125,18 @@
     color: black;
 }
 
+.site-navigation-conditions {
+    display: flex;
+
+    padding-right: 60px;
+}
 
 .site-navigation-conditions ul {
     list-style: none;
+
+    padding-right: 110px;
+
+    display: flex;
 }
 
 .site-navigation-conditions a {
@@ -98,6 +147,21 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
+
+    padding-top: 16px;
+}
+
+.site-navigation-conditions li {
+    padding-left: 40px;
+}
+
+.site-product-overwiew {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-product-overwiew div {
+    width: 480px;
 }
 
 .site-product-overwiew h2 {
@@ -110,6 +174,8 @@
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+
+    margin-bottom: 70px;
 }
 
 .site-product-overwiew a {
@@ -122,6 +188,11 @@
     letter-spacing: 3px;
 
     background-color: rgb(240, 197, 46);
+}
+
+.site-product-overwiew table {
+    width: 460px;
+    margin-top: 70px;
 }
 
 .product-characteristics td {
@@ -144,6 +215,14 @@
     text-decoration: none;
 }
 
+.catalog-section {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 110px;
+    padding-bottom: 85px;
+}
+
 .site-product-link div {
     background-color: rgb(247, 226, 150);
 
@@ -157,6 +236,13 @@
 
 .site-conditions-section {
     background-color: rgb(229, 229, 229);
+    width: 100%;
+
+    margin-bottom: 105px;
+}
+
+.site-conditions-section-block {
+    display: flex;
 }
 
 .site-conditions-section button {
@@ -187,6 +273,13 @@
     line-height: 30px;
 }
 
+.about-us {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 105px;
+}
+
 .about-us h2 {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 47px;
@@ -205,6 +298,7 @@
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 15px;
     line-height: 30px;
+    padding-top: 90px;
 }
 
 .about-us a {
@@ -217,20 +311,67 @@
     letter-spacing: 3px;
 
     background-color: rgb(240, 197, 46);
+
+    display: inline-block;
+
+    margin-top: 85px;
+}
+
+.about-us-1st-section {
+    width: 480px;
+}
+
+.about-us-2nd-section {
+    width: 560px;
+}
+
+.about-us-2nd-section p {
+    padding-bottom: 50px;
 }
 
 .footer {
     background-color: rgb(70, 70, 70);
 
     width: 100%;
+
+    padding-top: 65px;
+}
+
+.main-page-footer {
+    margin-top: 100px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-company-section p {
+    padding-top: 20px;
+}
+
+.footer-links-section {
+    padding-top: 65px;
 }
 
 .footer-navigation-conditions {
     list-style: none;
+
+    display: flex;
+    
+    padding-left: 0px;
+}
+
+.footer-navigation-conditions li {
+    padding-left: 35px;
+    letter-spacing: 3px;
 }
 
 .footer-socials {
     list-style: none;
+
+    display: flex;
+    width: 160px;
 }
 
 .footer-address {
@@ -268,6 +409,27 @@
 
 .footer-site-sections ul {
     list-style: none;
+}
+
+.write-us-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 760px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.close-button {
+    width: 60px;
+}
+
+.user-info {
+    display: flex;
+}
+
+.user-info div:nth-child(2) {
+    padding-left: 39px;
 }
 
 .write-us-form label {
@@ -323,6 +485,10 @@
     width: 200px;
 }
 
+.catalog-main-block {
+    display: flex;
+}
+
 .catalog-name {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 47px;
@@ -369,8 +535,10 @@
     list-style: none;
 }
 
-.catalog {
+.catalog-filters {
     background-color: rgb(238, 238, 238);
+
+    padding-left: 200px;
 }
 
 .catalog-filters-form-button {
@@ -389,6 +557,16 @@
     width: 200px;
 }
 
+.catalog-products {
+    margin-left: 75px;
+    margin-top: 70px;
+
+    width: 760px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
 .catalog-products a {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
@@ -398,6 +576,12 @@
 
 .catalog-sort-settings {
     background-color: rgba(235, 235, 235);
+    width: 760px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 75px;
 }
 
 .catalog-sort-settings a {
@@ -410,6 +594,8 @@
 
 .catalog-sort-settings ul {
     list-style: none;
+
+    display: flex;
 }
 
 .catalog-products span {
@@ -462,3 +648,12 @@
     border: none;
     background-color: rgba(255, 255, 255, 0);
  }
+
+ .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ .model {
+    display: none;
+}
