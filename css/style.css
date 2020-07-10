@@ -1,27 +1,30 @@
 @font-face {
     font-family: "OpenSans-Light" ;
     src:
-        url("../fonts/opensanslight.woff");
+        url("../fonts/opensanslight.woff"),
+        url("../fonts/opensanslight.woff2");
 }
 
 @font-face {
     font-family: "OpenSans-Regular" ;
     src:
-        url("../fonts/opensans.woff")
+        url("../fonts/opensans.woff"),
+        url("../fonts/opensans.woff2");
 }
 
 @font-face {
     font-family: "Gliroy-ExtraBold";
     src:
-        url("../fonts/gilroyextrabold.woff")
+        url("../fonts/gilroyextrabold.woff"),
+        url("../fonts/gilroyextrabold.woff2");
 }
 
 @font-face {
     font-family: "Gliroy-Light";
     src:
-        url("../fonts/gilroylight.woff")
+        url("../fonts/gilroylight.woff"),
+        url("../fonts/gilroylight.woff2");
 }
-
 
 .header {
     background-color: rgb(247, 226, 150);
@@ -318,15 +321,15 @@
     margin-top: 85px;
 }
 
-.about-us-1st-section {
+.about-us-company-information {
     width: 480px;
 }
 
-.about-us-2nd-section {
+.about-us-contacts {
     width: 560px;
 }
 
-.about-us-2nd-section p {
+.about-us-contacts p {
     padding-bottom: 50px;
 }
 
@@ -493,6 +496,12 @@
     display: flex;
 }
 
+.catalog-site-heading {
+    padding-left: 195px;
+    padding-bottom: 55px;
+    padding-top: 25px;
+}
+
 .catalog-name {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 47px;
@@ -535,6 +544,7 @@
 
 .filters fieldset {
     border: none;
+    padding-left: 0;
 }
 
 .filters label {
@@ -550,7 +560,7 @@
 .catalog-filters {
     background-color: rgb(238, 238, 238);
 
-    padding-left: 200px;
+    padding-left: 260px;
 }
 
 .catalog-filters-form-button {
@@ -570,10 +580,10 @@
 }
 
 .catalog-products {
-    margin-left: 75px;
+    margin-left: 95px;
     margin-top: 70px;
 
-    width: 760px;
+    width: 800px;
 
     display: flex;
     justify-content: space-between;
@@ -589,7 +599,7 @@
 .catalog-sort-settings {
     background-color: rgba(235, 235, 235);
 
-    width: 800px;
+    width: 975px;
     height: 70px;
 
     display: flex;
@@ -610,6 +620,20 @@
     list-style: none;
 
     display: flex;
+
+    padding-right: 235px;
+}
+
+.catalog-sort-settings li {
+    padding-left: 35px;
+}
+
+.catalog-sort-settings-block {
+    display: flex;
+
+    width: 800px;
+
+    padding-left: 20px;
 }
 
 .catalog-products span {
@@ -670,4 +694,18 @@
 
  .hidden-display {
     display: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
