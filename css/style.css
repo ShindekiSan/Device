@@ -1,33 +1,41 @@
 @font-face {
     font-family: "OpenSans-Light" ;
-    src:
-        url("../fonts/opensanslight.woff"),
-        url("../fonts/opensanslight.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "OpenSans-Regular" ;
-    src:
-        url("../fonts/opensans.woff"),
-        url("../fonts/opensans.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Gliroy-ExtraBold";
-    src:
-        url("../fonts/gilroyextrabold.woff"),
-        url("../fonts/gilroyextrabold.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/gilroyextrabold.woff") format("woff"), url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Gliroy-Light";
-    src:
-        url("../fonts/gilroylight.woff"),
-        url("../fonts/gilroylight.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/gilroylight.woff") format("woff"), url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 .header {
-    background-color: rgb(247, 226, 150);
+    margin-top: 20px;
+}
+
+.header-section {
+    background-color: #f7e296;
 }
 
 .header-1st-section {
@@ -37,13 +45,38 @@
     padding-left: 60px;
 }
 
+.header-1st-section img {
+    margin-top: -30px;
+}
+
+.header-1st-section img:hover {
+    opacity: 0.5;
+}
+
+.header-1st-section img:active {
+    opacity: 0.25;
+}
+
 .search-form input {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+    color: #ac9e69;
 
     border: none;
     background: rgba(0, 0, 0, 0);
+}
+
+.search-form input:hover {
+    color: #635a3c;
+}
+
+.search-form input:focus {
+    color: #000000;
+
+    border-bottom: 2px solid #000000;
+
+    height: 48px;
 }
 
 .search-form-button {
@@ -56,6 +89,15 @@
 
     background: rgba(0, 0, 0, 0);
     border: 2px solid black;
+}
+
+.search-form-button:hover {
+    background: #000000;
+    color: white;
+}
+
+.search-form-button:active {
+    color: #4d4d4d;
 }
 
 .site-sections {
@@ -73,6 +115,14 @@
 
     padding-left: 10px;
     padding-top: 15px;
+}
+
+.site-sections a:hover {
+    color: #635a3c;
+}
+
+.site-sections a:active {
+    color: #ac9e69;
 }
 
 .log-in-button {
@@ -105,10 +155,18 @@
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    color: black;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+.site-navigation-catalog-button:hover {
+    color: #635a3c;
+}
+
+.site-navigation-catalog-button:active {
+    color: #ac9e69;
 }
 
 .site-navigation-products {
@@ -126,6 +184,14 @@
     line-height: 30px;
     text-decoration: none;
     color: black;
+}
+
+.site-navigation-products a:hover {
+    color: #635a35;
+}
+
+.site-navigation-products a:active {
+    color: #ac9e5c;
 }
 
 .site-navigation-conditions {
@@ -152,6 +218,14 @@
     letter-spacing: 5px;
 
     padding-top: 16px;
+}
+
+.site-navigation-conditions a:hover {
+    color: #635a3c;
+}
+
+.site-navigation-conditions a:active {
+    color: #ac9e69;
 }
 
 .site-navigation-conditions li {
@@ -189,8 +263,25 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
 
-    background-color: rgb(240, 197, 46);
+    display: block;
+
+    width: 220px;
+
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 35%, #f0c52e 35%, #f0c52e 65%, rgba(255, 255, 255, 0) 65%);
+}
+
+.site-product-overwiew a:hover {
+    background-color: #f0c52e;
+
+    padding-top: 9px;
+
+    height: 30px;
+}
+
+.site-product-overwiew a:active {
+    color: #a88a20;
 }
 
 .site-product-overwiew table {
@@ -227,10 +318,18 @@
 }
 
 .site-product-link div {
-    background-color: rgb(247, 226, 150);
+    background-color: #f7e296;
 
     width: 160px;
     height: 160px;
+}
+
+.site-product-link div:hover {
+    background-color: #f0c52e;
+}
+
+.site-product-link img:active {
+    opacity: 0.5;
 }
 
 .site-product-link p {
@@ -238,7 +337,7 @@
 }
 
 .site-conditions-section {
-    background-color: rgb(229, 229, 229);
+    background-color: #e5e5e5;
     width: 100%;
 
     margin-bottom: 105px;
@@ -251,17 +350,33 @@
 .site-conditions-section button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
-    line-height: 9px;
+    line-height: 24px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
 
-    background-color: rgb(240, 197, 46);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 35%, #f0c52e 35%, #f0c52e 65%, rgba(255, 255, 255, 0) 65%);
     border: none;
 
-    height: 9px;
     width: 160px;
+}
+
+.site-conditions-section button:hover {
+    background-color: #f0c52e;
+
+    height: 39px;
+}
+
+.site-conditions-section button:active {
+    width: 280px;
+    height: 39px;
+
+    padding-right: 120px;
+
+    background: #000000;
+
+    color: #f7e184;
 }
 
 .site-conditions-section h2 {
@@ -274,6 +389,20 @@
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+}
+
+.our-partners {
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-partners a {
+    display: block;
+}
+
+.our-partners a:hover {
+    filter: grayscale(1);
+    opacity: 0.5;
 }
 
 .about-us {
@@ -313,12 +442,31 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
 
-    background-color: rgb(240, 197, 46);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 35%, #f0c52e 35%, #f0c52e 65%, rgba(255, 255, 255, 0) 65%);
 
     display: inline-block;
 
     margin-top: 85px;
+
+    width: 220px;
+}
+
+.about-us-company-information a {
+    margin-top: 95px;
+}
+
+.about-us a:hover {
+    background-color: #f0c52e;
+    
+    padding-top: 9px;
+
+    height: 30px;
+}
+
+.about-us a:active {
+    color: #a88a20;
 }
 
 .about-us-company-information {
@@ -334,7 +482,7 @@
 }
 
 .footer {
-    background-color: rgb(70, 70, 70);
+    background-color: #464646;
 
     width: 100%;
 
@@ -356,6 +504,14 @@
 
 .footer-links-section {
     padding-top: 65px;
+}
+
+.footer-company-section img:hover {
+    opacity: 0.75;
+}
+
+.footer-company-section img:active {
+    opacity: 0.5;
 }
 
 .footer-navigation-conditions {
@@ -384,15 +540,15 @@
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    color: white;
+    color: #ffffff;
 }
 
 .footer-tel {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    color: white;
-    text-decoration: none;;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -400,17 +556,33 @@
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.footer-navigation-conditions a:hover {
+    opacity: 0.5;
+}
+
+.footer-navigation-conditions a:active {
+    opacity: 0.25;
 }
 
 .footer-site-sections a {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    color: white;
+    color: #c8c8c8;
     text-decoration: none;
+}
+
+.footer-site-sections a:hover {
+    color: #ffffff;
+}
+
+.footer-site-sections a:active {
+    color: #7e7e7e;
 }
 
 .footer-site-sections ul {
@@ -428,7 +600,23 @@
 }
 
 .close-button {
+    background-color: #f7e184;  
+    border: none;
+
     width: 60px;
+    height: 60px;
+
+    border-radius: 60px;
+
+    color: #ffffff;
+}
+
+.close-button:hover {
+    background-color: #f0c52e;
+}
+
+.close-button:active {
+    background-color: #f7e296;
 }
 
 .user-info {
@@ -443,7 +631,7 @@
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    color: black;
+    color: #000000;
 }
 
 .write-us-form input {
@@ -452,7 +640,7 @@
     line-height: 18px;
 
     border: none;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
 
     width: 340px;
     height: 50px;
@@ -461,35 +649,69 @@
     margin-bottom: 10px;
 }
 
+.write-us-form input:hover {
+    background-color: #eaeaea;
+}
+
+.write-us-form input:focus {
+    background-color: #ffffff;
+    border: 4px solid #f7e296
+}
+
 .write-us-form textarea {
     font-family: OpenSans-Regular, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
 
     border: none;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
 
     width: 740px;
     height: 136px;
 
     padding-left: 20px;
     padding-top: 20px;
+
+    resize: none;
+}
+
+.write-us-form textarea:hover {
+    background-color: #eaeaea;
+}
+
+.write-us-form textarea:focus {
+    background-color: #ffffff;
+    border: 4px solid #f7e296
+}
+
+.write-us-form textarea:invalid {
+    border: none;
+    background-color: #f6dada;
 }
 
 .submit-button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
-    line-height: 10px;
+    line-height: 24px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
 
-    background-color: rgb(240, 197, 46);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 35%, #f0c52e 35%, #f0c52e 65%, rgba(255, 255, 255, 0) 65%);
     border: none;
 
-    height: 8px;
     width: 200px;
+}
+
+.submit-button:hover {
+    background-color: #f0c52e;
+    
+    height: 39px;
+}
+
+.submit-button:active {
+    color: #a88a20;
 }
 
 .catalog-main-block {
@@ -520,10 +742,18 @@
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 13px;
     line-height: 23px;
-    color: rgb(199, 199, 199);
+    color: #c7c7c7;
     text-decoration: none;
 
     padding-right: 20px;
+}
+
+.site-sections-path a:hover {
+    color: #000000;
+}
+
+.site-sections-path a:active {
+    color: #efefef;
 }
 
 .catalog-settings-section-name {
@@ -558,7 +788,7 @@
 }
 
 .catalog-filters {
-    background-color: rgb(238, 238, 238);
+    background-color: #eeeeee;
 
     padding-left: 260px;
 }
@@ -566,17 +796,20 @@
 .catalog-filters-form-button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
-    line-height: 10px;
+    line-height: 24px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
 
-    background-color: rgb(240, 197, 46);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 35%, #f0c52e 35%, #f0c52e 65%, rgba(255, 255, 255, 0) 65%);
     border: none;
 
-    height: 8px;
     width: 200px;
+}
+
+.catalog-filters-form-button:hover {
+    background-color: #f0c52e;
 }
 
 .catalog-products {
@@ -594,86 +827,116 @@
     font-size: 18px;
     line-height: 24px;
     color: black;
+    text-decoration: none;
 }
 
 .catalog-sort-settings {
-    background-color: rgba(235, 235, 235);
+    background-color: #ebebeb;
 
     width: 975px;
-    height: 70px;
+    height: 65px;
 
     display: flex;
-    justify-content: space-between;
 
     padding-left: 75px;
+    padding-top: 5px;
 }
 
 .catalog-sort-settings a {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 13px;
     line-height: 23px;
-    color: rgb(199, 199, 199);
+    color: #c7c7c7;
     text-decoration: none;
+}
+
+.catalog-sort-settings a:hover {
+    color: #7a7a7a;
+}
+
+.catalog-sort-settings a:active {
+    color: #000000;
 }
 
 .catalog-sort-settings ul {
     list-style: none;
 
-    display: flex;
-
-    padding-right: 235px;
+    padding-right: 110px;
 }
 
 .catalog-sort-settings li {
     padding-left: 35px;
 }
 
-.catalog-sort-settings-block {
-    display: flex;
-
-    width: 800px;
-
-    padding-left: 20px;
-}
-
 .catalog-products span {
     font-family: Gliroy-Light, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: rgb(124, 124, 124);
+    color: #7c7c7c;
 }
 
 
 .catalog-add-to-cart-button {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
-    line-height: 10px;
+    line-height: 24px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
 
-    background-color: rgb(240, 197, 46);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 35%, #f0c52e 35%, #f0c52e 65%, rgba(255, 255, 255, 0) 65%);
     border: none;
 
-    height: 8px;
     width: 200px;
+}
+
+.catalog-add-to-cart-button:hover {
+    background-color: #f0c52e;
+
+    height: 39px;
+}
+
+.catalog-add-to-cart-button:active {
+    color: #ac9e5c;
 }
 
  .catalog-add-to-comparsion-button {
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 13px;
     line-height: 36px;
-    color: rgb(134, 134, 134);
+    color: #868686;
+    background-color: #ffffff;
 
     border: none;
  }
+
+ .catalog-add-to-comparsion-button:hover {
+    color: #000000;
+ }
+
+.catalog-add-to-comparsion-button:active {
+    color: #efefef;
+}
+
+.catalog-page-switches ul {
+    list-style: none;
+    
+    display: flex;
+}
 
  .catalog-page-switches a {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: rgb(164, 164, 164);
+    color: #868686;
+    text-decoration: none;
+
+    padding-left: 32px;
+ }
+
+ .catalog-page-switches a:hover {
+     color: #000000;
  }
 
  .catalog-page-switches button {
@@ -684,7 +947,7 @@
     letter-spacing: 3px;
 
     border: none;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
  }
 
  .container {
