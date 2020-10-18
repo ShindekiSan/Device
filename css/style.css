@@ -174,8 +174,8 @@
 
     padding-left: 0px;
 
-    flex-direction: column;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .site-navigation-products a {
@@ -534,6 +534,19 @@
     display: flex;
 
     width: 160px;
+
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-socials li {
+    padding-left: 35px;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .footer-address {
@@ -543,15 +556,6 @@
     color: #ffffff;
 }
 
-.footer-tel {
-    font-family: OpenSans-Light, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
 .footer-navigation-conditions a {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
@@ -559,6 +563,7 @@
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .footer-navigation-conditions a:hover {
@@ -567,6 +572,10 @@
 
 .footer-navigation-conditions a:active {
     opacity: 0.25;
+}
+
+.footer-site-sections {
+    display: flex;
 }
 
 .footer-site-sections a {
@@ -587,6 +596,38 @@
 
 .footer-site-sections ul {
     list-style: none;
+
+    display: flex;
+
+    margin-top: 0px;
+
+    padding-bottom: 13px;
+}
+
+.footer-site-compare-section {
+    display: block;
+
+    padding-right: 36px;
+}
+
+.footer-tel {
+    font-family: OpenSans-Light, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding-left: 82px;
+}
+
+.htmlacademy-link {
+    display: block;
+
+    margin-top: 66px;
+    margin-left: 160px;
+
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .write-us-form {
@@ -829,6 +870,11 @@
     justify-content: space-between;
 }
 
+.catalog-products p {
+    display: flex;
+    justify-content: space-between;
+}
+
 .catalog-products a {
     font-family: Gliroy-ExtraBold, Tahoma, sans-serif;
     font-size: 18px;
@@ -886,6 +932,10 @@
     padding-left: 35px;
 }
 
+.catalog-sort-buttons {
+    padding-top: 20px;
+}
+
 .catalog-products span {
     font-family: Gliroy-Light, Tahoma, sans-serif;
     font-size: 16px;
@@ -937,10 +987,31 @@
     color: #efefef;
 }
 
+.catalog-page-switches {
+    display: flex;
+
+    width: 807px;
+    height: 70px;
+
+    margin-left: 87px;
+    margin-bottom: 80px;
+    margin-top: 45px;
+
+    background-color: #ebebeb;
+}
+
+.catalog-back-button {
+    padding-left: 30px;
+}
+
 .catalog-page-switches ul {
     list-style: none;
     
     display: flex;
+
+    padding-right: 245px;
+    padding-left: 225px;
+    padding-top: 7px;
 }
 
  .catalog-page-switches a {
