@@ -173,9 +173,6 @@
     list-style: none;
 
     padding-left: 0px;
-
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .site-navigation-products a {
