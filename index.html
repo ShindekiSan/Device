@@ -15,7 +15,7 @@
                         <a href="#"><img src="img/logo.png" width="163" height="35" alt="Логотип"></a>
                         <form class="search" method="GET" action="#">
                             <label for="search" class="search-form">
-                                <img src="img/search.svg" width="18" height="18">
+                                <img src="img/search.svg" width="16" height="18">
                                 <input placeholder="Поиск по сайту" type="search" id="search">
                             </label>
                             <button type="submit" class="search-form-button">Найти</button>
@@ -37,7 +37,7 @@
                     <nav class="header-navigation-section">
                         <div class="site-navigation-catalog">
                             <a href="#" class="site-navigation-catalog-button">каталог товаров</a>
-                            <ul class="site-navigation-products">
+                            <ul class="hidden-display site-navigation-products">
                                 <li><a href="#">Виртуальная реальность</a></li>
                                 <li><a href="#">Моноподы для селфи</a></li>
                                 <li><a href="#">Экшн-камеры</a></li>
@@ -60,15 +60,15 @@
 
         <main>
             <h1 class="visually-hidden model">Магазин гаджетов</h1>
-            <div class="site-product-overwiew container">
+            <div class="site-product-overview container">
                 <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка с подставкой(и без) во всех состояниях">
                 <div>
                     <h2>Делай селфи, как Бен Стиллер!</h2>
                     <p>Самая длинная палка в магазине доступна у нас в магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <div class="site-product-overwiew-more-link"><a href="#">подробнее</a></div>
+                    <div class="site-product-overview-more-link"><a href="#">подробнее</a></div>
                     <table>
                         <tr class="product-characteristics">
-                            <td>8,5м</td>
+                            <td>8,5 м</td>
                             <td>5 кг</td>
                             <td>Карбон</td>
                         </tr>
@@ -80,12 +80,12 @@
                     </table>
                 </div>
             </div>
-            <div class="site-product-overwiew hidden-display">
+            <div class="site-product-overview hidden-display">
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
                 <div>
                     <h2>Худеем правильно!</h2>
                     <p>Мотивирующие фитнес браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
-                    <div class="site-product-overwiew-more-link"><a href="#">Подробнее</a></div>
+                    <div class="site-product-overview-more-link"><a href="#">Подробнее</a></div>
                     <table>
                         <tr class="product-characteristics">
                             <td>48 часов</td>
@@ -96,12 +96,12 @@
                     </table>
                 </div>
             </div>
-            <div class="site-product-overwiew hidden-display">
+            <div class="site-product-overview hidden-display">
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                 <div>
                     <h2>Порхает как бабочка, жалит как пчела!</h2>
                     <p>Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированым под стандартную камеру</p>
-                    <div class="site-product-overwiew-more-link"><a href="#">Подробнее</a></div>
+                    <div class="site-product-overview-more-link"><a href="#">Подробнее</a></div>
                     <table>
                         <tr class="product-characteristics">
                             <td>800 м</td>
@@ -273,7 +273,7 @@
             </div>
         </footer>
 
-        <section class="write-us-form">
+        <section class="write-us-form hidden-display">
             <h2 class="visually-hidden">Форма письма</h2>
             <button class="close-button">Закрыть</button>
             <form method="POST" action="#">
@@ -294,7 +294,7 @@
                 <div class="submit-button"><button type="submit">Отправить</button></div>
             </form>
         </section>
-        <section>
+        <section class="hidden-display">
             <h2 class="visually-hidden">Адрес офиса</h2>
             <button class="close-button">Закрыть</button>
             <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
